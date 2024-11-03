@@ -1,0 +1,2 @@
+# AuditorApplication
+🕵 Auditor for EntityApplication 🕵
