@@ -1,13 +1,13 @@
-package support
+package entity
 
-type ISupport interface {
+type IEntity interface {
 	List() []string
 }
 
-type SSupport struct{}
+type SEntity struct{}
 
 // List all the supported entities
-func (s *SSupport) List() []string {
+func (s *SEntity) List() []string {
 	return []string{
 		"github.com/AmadlaOrg/EntityApplication",
 	}
