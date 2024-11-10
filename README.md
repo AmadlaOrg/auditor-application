@@ -1,2 +1,3 @@
-# AuditorApplication
+# auditor-application 🕵
 🕵 Auditor for EntityApplication 🕵
+
