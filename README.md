@@ -18,7 +18,7 @@ a `--data|-d` parameter or via a pipe `|` (stdin).
 
 ## 🐰 Amadla
 Auditors like this one don't require [Amadla 🐰](https://amadla.org/) to function, but it requires a specific data
-structure. The data structures that it supports are found the [Entity Supported](#entity-supported) list section. The
+structure. The data structures that it supports are found the [Entity Supported](#-entity-supported) list section. The
 data in entities are stored in [YAML](https://yaml.org/) ([HERY](https://github.com/AmadlaOrg/hery)) format but need to
 be pass in [JSON](https://www.json.org/) format.
 
