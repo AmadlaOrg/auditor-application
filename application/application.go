@@ -18,9 +18,15 @@ type SApplication struct{}
 // FindApplication
 func (s *SApplication) FindApplication(name string, isContainer bool) (Application, error) {
 	if runtime.GOOS == "linux" {
-		s.linuxLocal(name)
+		_, err := s.linuxLocal(name)
+		if err != nil {
+			return Application{}, err
+		}
 	} else if runtime.GOOS == "windows" {
-		s.windowsLocal(name)
+		_, err := s.windowsLocal(name)
+		if err != nil {
+			return Application{}, err
+		}
 	}
 	return Application{}, nil
 }
