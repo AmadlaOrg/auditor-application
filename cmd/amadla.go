@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/AmadlaOrg/auditor-application/amadla"
-	"github.com/AmadlaOrg/auditor-application/amadla/entity"
+	amadlaCmd "github.com/AmadlaOrg/auditor-application/amadla/cmd"
+	entityCmd "github.com/AmadlaOrg/auditor-application/amadla/entity/cmd"
 	"github.com/spf13/cobra"
 )
 
@@ -12,6 +12,6 @@ var AmadlaCmd = &cobra.Command{
 }
 
 func init() {
-	AmadlaCmd.AddCommand(entity.ListEntitiesCmd)
-	AmadlaCmd.AddCommand(amadla.VersionSupportCmd)
+	AmadlaCmd.AddCommand(entityCmd.ListEntitiesCmd)
+	AmadlaCmd.AddCommand(amadlaCmd.VersionSupportCmd)
 }

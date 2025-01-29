@@ -1,0 +1,17 @@
+[
+  {
+    "_entity": "github.com/AmadlaOrg/EntityApplication@v1.0.0",
+    "_body": {
+      "name": "htop",
+      "which": "$PATH",
+      "exec": {
+        "command": "htop",
+        "version": "htop --version",
+        "help": "htop --help"
+      },
+      "lay": {
+        "name": "htop"
+      }
+    }
+  }
+]
