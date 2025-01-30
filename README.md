@@ -1,6 +1,6 @@
 <img src=".assets/auditor.jpg" alt="Electronics photo" style="width: 400px;" align="right">
 
-# auditor-application 🕵
+# `auditor-application` 🕵
 🕵 Auditor for Application 🕵
 
 This auditor determines if an application, package, and/or container image is installed.
@@ -34,6 +34,18 @@ Example:
 auditor-application amadla
 ```
 
+The default display is with a table:
+```
++--------------+----------------------------------------+-------------------+
+|   CATEGORY   |               SUPPORTED                | VERSION SUPPORTED |
++--------------+----------------------------------------+-------------------+
+| applications | hery                                   | ^0                |
+| applications | judge                                  | ^0                |
+| entities     | github.com/AmadlaOrg/EntityApplication | ^v1.0.0           |
++--------------+----------------------------------------+-------------------+
+```
+
+
 Output:
 ```json
 {
@@ -48,6 +60,11 @@ Output:
     }
   }
 }
+```
+
+### To output to a file
+```bash
+auditor-application amadla -j 2>&1 | tee output.json
 ```
 
 ### 📦 Entity Supported
