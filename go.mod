@@ -3,6 +3,7 @@ module github.com/AmadlaOrg/auditor-application
 go 1.23.3
 
 replace github.com/AmadlaOrg/LibraryUtils => ../LibraryUtils
+replace github.com/AmadlaOrg/LibraryAuditFramework => ../LibraryAuditFramework
 
 require (
 	github.com/olekukonko/tablewriter v0.0.5
