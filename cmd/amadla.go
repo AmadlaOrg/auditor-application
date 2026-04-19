@@ -46,7 +46,7 @@ func runAmadla(cmd *cobra.Command, args []string) {
 			"judge": "^0", // TODO:
 		},
 		"entities": map[string]string{
-			"github.com/AmadlaOrg/EntityApplication": "^v1.0.0",
+			"github.com/AmadlaOrg/Application": "^v1.0.0",
 		},
 	}
 
