@@ -17,7 +17,7 @@ var SettingsCmd = &cobra.Command{
 		}*/
 
 		table := tablewriter.NewWriter(os.Stdout)
-		table.SetHeader([]string{"Setting", "Value"})
+		table.Header([]string{"Setting", "Value"})
 		table.Append([]string{"Collections path", "..."})
 
 		/*envList, err := env.List()

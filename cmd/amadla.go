@@ -79,7 +79,7 @@ func runAmadla(cmd *cobra.Command, args []string) {
 // Function to display the data in a table format
 func displayAsTable(requirements map[string]any) {
 	table := tablewriter.NewWriter(os.Stdout)
-	table.SetHeader([]string{"Category", "Supported", "Version Supported"})
+	table.Header([]string{"Category", "Supported", "Version Supported"})
 
 	for category, data := range requirements {
 		switch v := data.(type) {
